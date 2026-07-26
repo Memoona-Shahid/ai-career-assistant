@@ -1,22 +1,31 @@
 # AI Career Assistant
 
-An AI-powered CLI assistant built using Python and the Gemini API.
+A command-line AI Career Assistant built with Python and Google's Gemini API.
+
+---
 
 ## Features
 
-- Ask career questions
-- Conversation history
-- Help command
-- Clear history
-- Environment variable support
-
-## Technologies
-
-- Python
+- AI Career Coach
 - Gemini API
-- python-dotenv
+- Conversation History
+- Timestamp
+- Question Counter
+- Help Commands
+- Clear History
+- Save History to File
+- Exception Handling
 
-## Run
+---
+
+## Installation
+
+```bash
+git clone <repository>
+
+cd ai-career-assistant
+
+python -m venv venv
 
 pip install -r requirements.txt
 
