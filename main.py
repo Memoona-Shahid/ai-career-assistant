@@ -1,8 +1,8 @@
 from career_assistant import CareerAssistant
-from utils import banner
+from utils import welcome
 
 
-banner()
+welcome()
 
 assistant = CareerAssistant()
 

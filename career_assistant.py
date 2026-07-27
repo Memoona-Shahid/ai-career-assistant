@@ -1,5 +1,5 @@
 from datetime import datetime
-
+from utils import load_chat_json
 from config import client
 from logger import logger, save_history
 from utils import timestamp, save_chat_json
@@ -8,7 +8,10 @@ from utils import timestamp, save_chat_json
 class CareerAssistant:
 
     def __init__(self):
-        self.history = []
+        self.history = load_chat_json()
+
+        if self.history:
+            print(f"Loaded {len(self.history)} previous conversations.")
         self.question_count = 0
         self.start_time = datetime.now()
 
