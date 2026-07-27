@@ -1,9 +1,9 @@
-from chatbot import chat
-from utils import print_banner
+from career_assistant import CareerAssistant
+from utils import banner
 
-def main():
-    print_banner()
-    chat()
 
-if __name__ == "__main__":
-    main()
+banner()
+
+assistant = CareerAssistant()
+
+assistant.start_chat()
