@@ -1,6 +1,6 @@
 from config import client
 from utils import timestamp
-from logger import save_history
+from logger import save_history, logger
 
 
 class CareerAssistant:
@@ -10,6 +10,9 @@ class CareerAssistant:
         self.question_count = 0
 
     def generate_response(self, question):
+
+        # Log user question
+        logger.info(f"User asked: {question}")
 
         response = client.models.generate_content(
             model="gemini-3.5-flash",
@@ -22,6 +25,9 @@ Question:
         )
 
         answer = response.text
+
+        # Log successful response
+        logger.info("Response generated successfully")
 
         self.history.append({
             "question": question,
@@ -40,6 +46,8 @@ Question:
             print("No history found.")
             return
 
+        logger.info("Conversation history viewed")
+
         print("\nConversation History")
 
         for i, chat in enumerate(self.history, start=1):
@@ -49,6 +57,9 @@ Question:
     def clear_history(self):
 
         self.history.clear()
+
+        logger.info("Conversation history cleared")
+
         print("History cleared.")
 
     def start_chat(self):
@@ -58,6 +69,9 @@ Question:
             question = input("\nYou: ")
 
             if question.lower() == "/exit":
+
+                logger.info("Application closed")
+
                 print(f"\nQuestions Asked: {self.question_count}")
                 print("Goodbye!")
                 break
@@ -71,6 +85,9 @@ Question:
                 continue
 
             if question.lower() == "/help":
+
+                logger.info("Help command used")
+
                 print("""
 Commands
 
@@ -88,5 +105,8 @@ Commands
                 print(f"\n[{timestamp()}]")
                 print("Assistant:", answer)
 
-            except Exception:
+            except Exception as e:
+
+                logger.error(f"Gemini API Error: {e}")
+
                 print("Something went wrong.")

@@ -1,4 +1,14 @@
 from datetime import datetime
+import logging
+
+# Configure logging
+logging.basicConfig(
+    filename="assistant.log",
+    level=logging.INFO,
+    format="%(asctime)s | %(levelname)s | %(message)s"
+)
+
+logger = logging.getLogger(__name__)
 
 
 def save_history(question, answer):

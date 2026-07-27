@@ -1,0 +1,8 @@
+2026-07-27 13:40:20,901 | INFO | User asked: hi
+2026-07-27 13:40:20,903 | INFO | AFC is enabled with max remote calls: 10.
+2026-07-27 13:40:25,267 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-07-27 13:40:25,281 | INFO | Response generated successfully
+2026-07-27 13:40:28,756 | INFO | User asked: hwru
+2026-07-27 13:40:28,756 | INFO | AFC is enabled with max remote calls: 10.
+2026-07-27 13:40:31,203 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-07-27 13:40:31,247 | INFO | Response generated successfully
