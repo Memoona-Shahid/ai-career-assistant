@@ -1,6 +1,8 @@
+from datetime import datetime
+
 from config import client
-from utils import timestamp
-from logger import save_history, logger
+from logger import logger, save_history
+from utils import timestamp, save_chat_json
 
 
 class CareerAssistant:
@@ -8,10 +10,10 @@ class CareerAssistant:
     def __init__(self):
         self.history = []
         self.question_count = 0
+        self.start_time = datetime.now()
 
     def generate_response(self, question):
 
-        # Log user question
         logger.info(f"User asked: {question}")
 
         response = client.models.generate_content(
@@ -26,7 +28,6 @@ Question:
 
         answer = response.text
 
-        # Log successful response
         logger.info("Response generated successfully")
 
         self.history.append({
@@ -49,6 +50,7 @@ Question:
         logger.info("Conversation history viewed")
 
         print("\nConversation History")
+        print("-" * 40)
 
         for i, chat in enumerate(self.history, start=1):
             print(f"\nQ{i}: {chat['question']}")
@@ -72,8 +74,22 @@ Question:
 
                 logger.info("Application closed")
 
-                print(f"\nQuestions Asked: {self.question_count}")
-                print("Goodbye!")
+                end_time = datetime.now()
+
+                session_time = end_time - self.start_time
+
+                minutes = session_time.seconds // 60
+                seconds = session_time.seconds % 60
+
+                print("\n" + "=" * 40)
+                print("Today's Session")
+                print("=" * 40)
+
+                print(f"Questions Asked : {self.question_count}")
+                print(f"Session Length : {minutes} min {seconds} sec")
+
+                print("\nGoodbye!")
+
                 break
 
             if question.lower() == "/history":
@@ -89,13 +105,32 @@ Question:
                 logger.info("Help command used")
 
                 print("""
-Commands
+========================================
+        Available Commands
+========================================
 
-/help
-/history
-/clear
-/exit
+/help      Show this menu
+
+/history   View conversation history
+
+/clear     Clear current session
+
+/save      Save chat history (JSON)
+
+/exit      Exit application
+
+========================================
 """)
+                continue
+
+            if question.lower() == "/save":
+
+                save_chat_json(self.history)
+
+                logger.info("Chat history saved to JSON")
+
+                print("✅ Chat saved successfully.")
+
                 continue
 
             try:
@@ -110,3 +145,4 @@ Commands
                 logger.error(f"Gemini API Error: {e}")
 
                 print("Something went wrong.")
+                print("Please try again.")
