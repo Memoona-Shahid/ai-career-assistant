@@ -1,42 +1,66 @@
 from datetime import datetime
-from utils import load_chat_json
-from config import client
+
+from config import client, MODEL_NAME
 from logger import logger, save_history
-from utils import timestamp, save_chat_json
+from utils import (
+    load_chat_json,
+    save_chat_json,
+    timestamp,
+)
 
 
 class CareerAssistant:
+    """
+    AI Career Assistant that interacts with Gemini,
+    manages chat history, and handles user commands.
+    """
 
-    def __init__(self):
-        self.history = load_chat_json()
+    def __init__(self) -> None:
+        """
+        Initialize the assistant.
+        """
+        self.history: list = load_chat_json()
 
         if self.history:
+            logger.info(f"Loaded {len(self.history)} previous conversations.")
             print(f"Loaded {len(self.history)} previous conversations.")
-        self.question_count = 0
-        self.start_time = datetime.now()
 
-    def generate_response(self, question):
+        self.question_count: int = 0
+        self.start_time: datetime = datetime.now()
+
+    def generate_response(self, question: str) -> str:
+        """
+        Generate a response from Gemini AI.
+
+        Args:
+            question: User's question.
+
+        Returns:
+            AI-generated response.
+        """
 
         logger.info(f"User asked: {question}")
 
         response = client.models.generate_content(
-            model="gemini-3.5-flash",
+            model=MODEL_NAME,
             contents=f"""
 You are an experienced AI Career Coach.
 
 Question:
 {question}
-"""
+""",
         )
 
-        answer = response.text
+        answer: str = response.text
 
-        logger.info("Response generated successfully")
+        logger.info("Response generated successfully.")
 
-        self.history.append({
-            "question": question,
-            "answer": answer
-        })
+        self.history.append(
+            {
+                "question": question,
+                "answer": answer,
+            }
+        )
 
         self.question_count += 1
 
@@ -44,68 +68,96 @@ Question:
 
         return answer
 
-    def show_history(self):
+    def show_history(self) -> None:
+        """
+        Display previous conversations.
+        """
 
         if not self.history:
+            logger.warning("History requested but no history found.")
             print("No history found.")
             return
 
-        logger.info("Conversation history viewed")
+        logger.info("Conversation history viewed.")
 
         print("\nConversation History")
-        print("-" * 40)
+        print("-" * 50)
 
-        for i, chat in enumerate(self.history, start=1):
-            print(f"\nQ{i}: {chat['question']}")
-            print(f"A{i}: {chat['answer']}")
+        for index, chat in enumerate(self.history, start=1):
+            print(f"\nQ{index}: {chat['question']}")
+            print(f"A{index}: {chat['answer']}")
 
-    def clear_history(self):
+    def clear_history(self) -> None:
+        """
+        Clear chat history.
+        """
 
         self.history.clear()
 
-        logger.info("Conversation history cleared")
+        logger.info("Conversation history cleared.")
 
         print("History cleared.")
 
-    def start_chat(self):
+    def print_summary(self) -> None:
+        """
+        Display today's session summary.
+        """
+
+        end_time = datetime.now()
+
+        session_time = end_time - self.start_time
+
+        minutes = session_time.seconds // 60
+        seconds = session_time.seconds % 60
+
+        print("\n" + "=" * 40)
+        print("Today's Session")
+        print("=" * 40)
+        print(f"Questions Asked : {self.question_count}")
+        print(f"Session Length  : {minutes} min {seconds} sec")
+        print("=" * 40)
+
+    def start_chat(self) -> None:
+        """
+        Start the interactive chat session.
+        """
+
+        logger.info("Application started.")
 
         while True:
 
-            question = input("\nYou: ")
+            question: str = input("\nYou: ").strip()
 
-            if question.lower() == "/exit":
+            if not question:
+                logger.warning("User entered an empty question.")
+                print("Please enter a question.")
+                continue
 
-                logger.info("Application closed")
+            command = question.lower()
 
-                end_time = datetime.now()
+            if command == "/exit":
 
-                session_time = end_time - self.start_time
+                logger.info("Application closed.")
 
-                minutes = session_time.seconds // 60
-                seconds = session_time.seconds % 60
-
-                print("\n" + "=" * 40)
-                print("Today's Session")
-                print("=" * 40)
-
-                print(f"Questions Asked : {self.question_count}")
-                print(f"Session Length : {minutes} min {seconds} sec")
+                self.print_summary()
 
                 print("\nGoodbye!")
 
                 break
 
-            if question.lower() == "/history":
+            elif command == "/history":
+
                 self.show_history()
                 continue
 
-            if question.lower() == "/clear":
+            elif command == "/clear":
+
                 self.clear_history()
                 continue
 
-            if question.lower() == "/help":
+            elif command == "/help":
 
-                logger.info("Help command used")
+                logger.info("Help menu opened.")
 
                 print("""
 ========================================
@@ -118,7 +170,7 @@ Question:
 
 /clear     Clear current session
 
-/save      Save chat history (JSON)
+/save      Save chat history
 
 /exit      Exit application
 
@@ -126,13 +178,19 @@ Question:
 """)
                 continue
 
-            if question.lower() == "/save":
+            elif command == "/save":
 
-                save_chat_json(self.history)
+                try:
+                    save_chat_json(self.history)
 
-                logger.info("Chat history saved to JSON")
+                    logger.info("Chat history saved successfully.")
 
-                print("✅ Chat saved successfully.")
+                    print("✅ Chat saved successfully.")
+
+                except Exception:
+                    logger.exception("Failed to save chat history.")
+
+                    print("Unable to save chat history.")
 
                 continue
 
@@ -141,11 +199,10 @@ Question:
                 answer = self.generate_response(question)
 
                 print(f"\n[{timestamp()}]")
-                print("Assistant:", answer)
+                print(f"Assistant: {answer}")
 
-            except Exception as e:
+            except Exception:
+                logger.exception("Failed to generate AI response.")
 
-                logger.error(f"Gemini API Error: {e}")
-
-                print("Something went wrong.")
+                print("\nSomething went wrong while contacting Gemini.")
                 print("Please try again.")
