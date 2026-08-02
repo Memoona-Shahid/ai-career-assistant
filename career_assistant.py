@@ -1,8 +1,11 @@
 from datetime import datetime
 
 from config import client, MODEL_NAME
+from constants import Command, MAX_HISTORY
 from logger import logger, save_history
+from models import ChatSession
 from utils import (
+    export_chat,
     load_chat_json,
     save_chat_json,
     timestamp,
@@ -19,24 +22,23 @@ class CareerAssistant:
         """
         Initialize the assistant.
         """
-        self.history: list = load_chat_json()
 
-        if self.history:
-            logger.info(f"Loaded {len(self.history)} previous conversations.")
-            print(f"Loaded {len(self.history)} previous conversations.")
+        history: list = load_chat_json()
 
-        self.question_count: int = 0
-        self.start_time: datetime = datetime.now()
+        if history:
+            logger.info(f"Loaded {len(history)} previous conversations.")
+            print(f"Loaded {len(history)} previous conversations.")
+
+        self.session = ChatSession(
+            session_id=datetime.now().strftime("%Y%m%d_%H%M%S"),
+            created_at=datetime.now(),
+            question_count=0,
+            history=history,
+        )
 
     def generate_response(self, question: str) -> str:
         """
         Generate a response from Gemini AI.
-
-        Args:
-            question: User's question.
-
-        Returns:
-            AI-generated response.
         """
 
         logger.info(f"User asked: {question}")
@@ -55,14 +57,21 @@ Question:
 
         logger.info("Response generated successfully.")
 
-        self.history.append(
+        self.session.history.append(
             {
                 "question": question,
                 "answer": answer,
             }
         )
 
-        self.question_count += 1
+        # Keep only the latest MAX_HISTORY conversations
+        if len(self.session.history) > MAX_HISTORY:
+            self.session.history.pop(0)
+            logger.info(
+                f"History limit exceeded. Oldest conversation removed. Maximum history: {MAX_HISTORY}"
+            )
+
+        self.session.question_count += 1
 
         save_history(question, answer)
 
@@ -73,7 +82,7 @@ Question:
         Display previous conversations.
         """
 
-        if not self.history:
+        if not self.session.history:
             logger.warning("History requested but no history found.")
             print("No history found.")
             return
@@ -83,7 +92,7 @@ Question:
         print("\nConversation History")
         print("-" * 50)
 
-        for index, chat in enumerate(self.history, start=1):
+        for index, chat in enumerate(self.session.history, start=1):
             print(f"\nQ{index}: {chat['question']}")
             print(f"A{index}: {chat['answer']}")
 
@@ -92,7 +101,7 @@ Question:
         Clear chat history.
         """
 
-        self.history.clear()
+        self.session.history.clear()
 
         logger.info("Conversation history cleared.")
 
@@ -105,7 +114,7 @@ Question:
 
         end_time = datetime.now()
 
-        session_time = end_time - self.start_time
+        session_time = end_time - self.session.created_at
 
         minutes = session_time.seconds // 60
         seconds = session_time.seconds % 60
@@ -113,7 +122,7 @@ Question:
         print("\n" + "=" * 40)
         print("Today's Session")
         print("=" * 40)
-        print(f"Questions Asked : {self.question_count}")
+        print(f"Questions Asked : {self.session.question_count}")
         print(f"Session Length  : {minutes} min {seconds} sec")
         print("=" * 40)
 
@@ -135,7 +144,7 @@ Question:
 
             command = question.lower()
 
-            if command == "/exit":
+            if command == Command.EXIT.value:
 
                 logger.info("Application closed.")
 
@@ -145,17 +154,17 @@ Question:
 
                 break
 
-            elif command == "/history":
+            elif command == Command.HISTORY.value:
 
                 self.show_history()
                 continue
 
-            elif command == "/clear":
+            elif command == Command.CLEAR.value:
 
                 self.clear_history()
                 continue
 
-            elif command == "/help":
+            elif command == Command.HELP.value:
 
                 logger.info("Help menu opened.")
 
@@ -174,14 +183,16 @@ Question:
 
 /exit      Exit application
 
+/export    Export conversation (.md)
+
 ========================================
 """)
                 continue
 
-            elif command == "/save":
+            elif command == Command.SAVE.value:
 
                 try:
-                    save_chat_json(self.history)
+                    save_chat_json(self.session.history)
 
                     logger.info("Chat history saved successfully.")
 
@@ -191,6 +202,21 @@ Question:
                     logger.exception("Failed to save chat history.")
 
                     print("Unable to save chat history.")
+
+                continue
+            elif command == Command.EXPORT.value:
+
+                try:
+                    export_path = export_chat(self.session.history)
+
+                    logger.info(f"Chat exported successfully to {export_path}.")
+
+                    print(f"✅ Chat exported successfully to {export_path}.")
+
+                except Exception:
+                    logger.exception("Failed to export chat history.")
+
+                    print("Unable to export chat history.")
 
                 continue
 

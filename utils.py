@@ -2,7 +2,7 @@ from datetime import datetime
 from pathlib import Path
 import json
 
-from config import HISTORY_DIR
+from config import HISTORY_DIR, EXPORT_DIR
 
 
 def welcome() -> None:
@@ -24,9 +24,6 @@ def welcome() -> None:
 def timestamp() -> str:
     """
     Return the current time.
-
-    Returns:
-        Current time formatted as HH:MM AM/PM.
     """
 
     return datetime.now().strftime("%I:%M %p")
@@ -34,17 +31,12 @@ def timestamp() -> str:
 
 def load_chat_json() -> list:
     """
-    Load the most recent chat history.
-
-    Returns:
-        List containing previous conversation.
-        Returns an empty list if no history exists.
+    Load the latest chat history.
     """
 
     history_path = Path(HISTORY_DIR)
 
-    if not history_path.exists():
-        history_path.mkdir(parents=True)
+    history_path.mkdir(parents=True, exist_ok=True)
 
     files = sorted(history_path.glob("session_*.json"))
 
@@ -62,10 +54,7 @@ def load_chat_json() -> list:
 
 def save_chat_json(history: list) -> None:
     """
-    Save the current conversation into a new session file.
-
-    Args:
-        history: Conversation history.
+    Save chat history as a JSON session.
     """
 
     history_path = Path(HISTORY_DIR)
@@ -85,3 +74,47 @@ def save_chat_json(history: list) -> None:
         ),
         encoding="utf-8",
     )
+
+
+def export_chat(history: list) -> Path:
+    """
+    Export the current conversation to a Markdown file.
+
+    Args:
+        history: Conversation history.
+
+    Returns:
+        Path of the exported Markdown file.
+    """
+
+    export_path = Path(EXPORT_DIR)
+
+    export_path.mkdir(parents=True, exist_ok=True)
+
+    filename = (
+        export_path
+        / f"chat_{datetime.now().strftime('%Y-%m-%d_%H-%M-%S')}.md"
+    )
+
+    lines = [
+        "# AI Career Assistant Session",
+        "",
+        f"Exported: {datetime.now().strftime('%d %B %Y %I:%M %p')}",
+        "",
+    ]
+
+    for chat in history:
+
+        lines.append("## User")
+        lines.append(chat["question"])
+        lines.append("")
+
+        lines.append("## Assistant")
+        lines.append(chat["answer"])
+        lines.append("")
+        lines.append("---")
+        lines.append("")
+
+    filename.write_text("\n".join(lines), encoding="utf-8")
+
+    return filename

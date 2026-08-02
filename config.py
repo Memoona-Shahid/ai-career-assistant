@@ -1,9 +1,15 @@
 from pathlib import Path
-from dotenv import load_dotenv
-from google import genai
 import os
 
-# Load environment variables
+from dotenv import load_dotenv
+from google import genai
+
+from constants import DEFAULT_MODEL
+
+# ======================================================
+# Load Environment Variables
+# ======================================================
+
 load_dotenv()
 
 # ======================================================
@@ -14,19 +20,11 @@ BASE_DIR = Path(__file__).parent
 
 LOG_DIR = BASE_DIR / "logs"
 HISTORY_DIR = BASE_DIR / "history"
+EXPORT_DIR = BASE_DIR / "exports"
 
 LOG_DIR.mkdir(exist_ok=True)
 HISTORY_DIR.mkdir(exist_ok=True)
-
-# ======================================================
-# Application Settings
-# ======================================================
-
-APP_NAME = "AI Career Assistant"
-
-MODEL_NAME = "gemini-3.5-flash"
-
-MAX_HISTORY = 100
+EXPORT_DIR.mkdir(exist_ok=True)
 
 # ======================================================
 # Gemini Configuration
@@ -38,5 +36,7 @@ if not API_KEY:
     raise ValueError(
         "GEMINI_API_KEY not found in .env file."
     )
+
+MODEL_NAME = DEFAULT_MODEL
 
 client = genai.Client(api_key=API_KEY)

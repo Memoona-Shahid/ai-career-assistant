@@ -118,3 +118,15 @@ google.genai.errors.ClientError: 404 NOT_FOUND. {'error': {'code': 404, 'message
 2026-08-01 21:28:23,401 | INFO | User asked: i have added, docstring, type hint, and pathlib in this fucking project , do you think i can be an ai enginneer, if yes, then after how many days?
 2026-08-01 21:28:33,338 | INFO | Response generated successfully.
 2026-08-01 21:29:02,118 | WARNING | Application interrupted by user.
+2026-08-02 14:57:12,809 | INFO | Starting AI Career Assistant.
+2026-08-02 14:57:12,814 | INFO | Application started.
+2026-08-02 14:57:15,595 | INFO | User asked: hi
+2026-08-02 14:57:18,847 | INFO | Response generated successfully.
+2026-08-02 14:57:22,607 | INFO | User asked: hw r u?
+2026-08-02 14:57:25,693 | INFO | Response generated successfully.
+2026-08-02 14:57:29,787 | INFO | User asked: bye
+2026-08-02 14:57:32,247 | INFO | Response generated successfully.
+2026-08-02 14:57:37,592 | INFO | Chat exported successfully to c:\Users\User\Documents\150 days of AI-ENGINEERING\Ai-career-assistant\exports\chat_2026-08-02_14-57-37.md.
+2026-08-02 14:57:55,960 | INFO | User asked: bye
+2026-08-02 14:57:59,283 | INFO | Response generated successfully.
+2026-08-02 14:57:59,286 | INFO | Application closed.
