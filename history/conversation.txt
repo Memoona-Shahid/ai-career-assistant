@@ -141,3 +141,458 @@ Whenever you need help with resume reviews, interview preparation, salary negoti
 
 Wishing you the absolute best in your professional endeavors! Warm regards and take care.
 ------------------------------------------------------------
+
+[2026-08-03 12:38:06.698485]
+You: /serach
+Assistant: Hello! It looks like you might have been trying to initiate a **search** command. 
+
+As your AI Career Coach, I am ready to help you navigate and search for the best strategies to advance your career. 
+
+What are we searching for today? Here are a few ways we can direct our search:
+
+1. **Job Search Strategy:** "How do I find hidden job market opportunities in [Industry]?"
+2. **Role Exploration:** "What careers fit a background in [Skill A] and [Skill B]?"
+3. **Resume Keyword Search:** "What keywords should I include in my resume for a [Job Title] role?"
+4. **Target Companies:** "How do I research and target top companies in the [Tech/Finance/Healthcare] sector?"
+5. **Skill Gap Analysis:** "What skills do I need to search for and acquire to transition from [Role A] to [Role B]?"
+
+Tell me a bit about **your current situation, your target role, or what industry you are looking into**, and we can start searching for the best path forward together!
+------------------------------------------------------------
+
+[2026-08-03 12:38:15.700041]
+You: hi
+Assistant: Hello! It’s great to connect with you. 
+
+I’m your AI Career Coach, and I'm here to help you navigate your professional journey. Whether you are looking to:
+
+*   **Transition into a new industry or role**
+*   **Polish your resume or LinkedIn profile**
+*   **Prepare for an upcoming job interview** (we can even do mock interviews!)
+*   **Develop a strategic job search plan**
+*   **Navigate a tricky workplace situation** or negotiate an offer
+
+...or if you just want to figure out what your next steps should be, I've got you covered.
+
+To get us started, tell me a little bit about where you are in your career journey right now. What's on your mind today?
+------------------------------------------------------------
+
+[2026-08-03 12:38:22.727509]
+You: hello
+Assistant: Hello! Welcome. 
+
+I am your AI Career Coach, and I’m thrilled to help you navigate your professional journey. 
+
+Whether you are looking to:
+*   **Land a new job** (resume/LinkedIn optimization, job search strategies)
+*   **Ace an interview** (mock interviews, behavioral question prep, elevator pitches)
+*   **Pivot your career** (identifying transferable skills, exploring new industries)
+*   **Grow in your current role** (navigating promotions, difficulty with a manager, leadership development)
+*   **Negotiate an offer** (salary, benefits, equity)
+
+...I am here to provide structured, actionable, and personalized guidance.
+
+To get started, tell me a little bit about yourself: **Where are you currently in your career, and what is your main goal today?**
+------------------------------------------------------------
+
+[2026-08-03 12:38:35.134846]
+You: what is python?
+Assistant: Hello! As your Career Coach, I am thrilled you asked this question. 
+
+If you are looking to future-proof your career, transition into tech, or simply automate the boring parts of your current job, **Python is one of the most valuable assets you can add to your resume.**
+
+From a career perspective, think of Python as the **"Swiss Army Knife" of the modern professional world.** 
+
+Here is how I break down what Python is, why it is so dominant in the job market, and what it can do for your career.
+
+---
+
+### 1. The Simple Definition
+Technically, Python is a **high-level, general-purpose programming language**. 
+* **"High-level"** means it was designed to be easy for humans to read and write. It looks a lot like plain English.
+* **"General-purpose"** means you can use it for almost anything—unlike some languages that only do one specific job.
+
+### 2. Why is Python a Career Game-Changer?
+If you look at job boards today, Python is consistently listed as one of the most in-demand skills globally. Here is why employers love it:
+* **Incredible Efficiency:** Because Python is easy to write, companies can build and launch products much faster than they could using other languages.
+* **The "Lego" Effect (Libraries):** Python has a massive ecosystem of "libraries" (pre-written code packages). Instead of writing complex programs from scratch, Python developers can stack these pre-built blocks together to build advanced technology quickly.
+* **Low Barrier to Entry:** You do not need a computer science degree to learn Python. It is widely considered the most beginner-friendly programming language.
+
+---
+
+### 3. Where is Python Used? (Career Pathways)
+Learning Python doesn't just make you a "programmer." It opens doors to several high-paying career tracks:
+
+* **Data Science & Analytics (High Demand):** Companies sit on mountains of data. Python is the gold standard for analyzing this data, finding trends, and helping executives make smart business decisions. 
+* **Artificial Intelligence & Machine Learning (The Future):** If you want to work with AI, ChatGPT, or self-driving technology, Python is non-negotiable. Almost all major AI development is done in Python.
+* **Web Development:** Major platforms like Instagram, Spotify, and Netflix use Python on their backend to handle millions of users.
+* **Automation & Scripting (The "Superpower"):** Even if you are in Marketing, Finance, HR, or Operations, you can use Python to automate repetitive tasks—like organizing spreadsheets, sending automated emails, or scraping data from the web. This makes you incredibly efficient in any role.
+
+---
+
+### My Coach's Verdict: Is Python right for you?
+**Absolutely yes.** Whether you want to become a six-figure Software Engineer, a Data Analyst, or just want to be the most efficient person in your current department, Python is the best learning investment you can make today.
+
+**To help me tailor my coaching for you:** 
+What is your current career goal? Are you looking to switch industries, step up in your current field, or are you just curious?
+------------------------------------------------------------
+
+[2026-08-03 12:38:48.736327]
+You: Explain Python.
+Assistant: Hello! As your Career Coach, I am thrilled you asked this question. Whether you are looking to transition into tech, level up in your current role, or future-proof your career, understanding Python is one of the highest-leverage moves you can make today.
+
+Let’s break down Python—not just what it is technically, but **why it matters to your career** and **how you can leverage it.**
+
+---
+
+### 1. What is Python? (The Plain-English Explanation)
+Think of Python as the **"Swiss Army Knife"** of the digital world. 
+
+Technically, it is a high-level, versatile programming language. In simple terms, **it is a way to give instructions to a computer using words that look very close to everyday English.** 
+
+Unlike older languages (like C++ or Java) which require complex, rigid code, Python was designed to be easily read and written. 
+
+*   *Java code to print "Hello World":* 5 lines of complex code.
+*   *Python code to print "Hello World":* `print("Hello World")`
+
+Because it is so readable, it has become the most popular language in the world for beginners and experts alike.
+
+---
+
+### 2. Why is Python a Career Game-Changer?
+From a career development perspective, Python is no longer just for "Software Engineers." It has become a fundamental literacy skill, much like Microsoft Excel was in the 2000s.
+
+Here is why learning Python boosts your resume:
+
+*   **Low Barrier to Entry:** Because it reads like English, you can learn the basics in a few weeks, making it perfect for career switchers.
+*   **Massive Job Demand:** Companies from Google to local startups, financial firms, and healthcare systems are desperate for Python-literate talent.
+*   **Automation Power:** If your job involves repetitive tasks (copy-pasting data, sending weekly reports, sorting files), Python can automate hours of your work in seconds.
+
+---
+
+### 3. Where is Python Used? (The Career Paths)
+If you learn Python, you open doors to several highly lucrative career tracks:
+
+1.  **Data Science & Analytics (The High-Growth Track):**
+    *   Python is the undisputed king of Data Science. Analysts use it to clean data, find trends, and build predictive models. 
+    *   *Key tools:* Pandas, NumPy.
+2.  **Artificial Intelligence & Machine Learning (The Future-Proof Track):**
+    *   Almost all modern AI (including ChatGPT!) is built and trained using Python. If you want to work in AI, Python is non-negotiable.
+    *   *Key tools:* TensorFlow, PyTorch.
+3.  **Web Development (The Builder Track):**
+    *   Python powers the backend (the brains) of major websites like Instagram, Spotify, and Netflix.
+    *   *Key tools:* Django, Flask.
+4.  **Business Automation (The Efficiency Track):**
+    *   Even if you are in Marketing, HR, or Finance, you can use Python to scrape websites for lead generation, automate emails, or analyze financial portfolios.
+
+---
+
+### 4. Your Career Coach Action Plan: How to Start
+If you want to add Python to your resume, here is the step-by-step roadmap I recommend to my clients:
+
+*   **Step 1: Start Small (Don't buy expensive bootcamps yet).** Use free resources like *freeCodeCamp*, *Coursera*, or the book *"Automate the Boring Stuff with Python"* (highly recommended for non-tech professionals).
+*   **Step 2: Build a "Portfolio of One."** Don't just learn theory. Build a small project that solves a problem in your *current* job. (e.g., write a script that merges three Excel sheets into one). 
+*   **Step 3: Put it on your resume.** Once you can write basic scripts, add "Python (Data Analysis/Automation)" to your Skills section. In job interviews, tell the story of how you used Python to save time or solve a business problem.
+
+**The Bottom Line:**
+Learning Python doesn't mean you have to become a coder. It means you become a **highly efficient, data-driven problem solver**—and those are the employees who get promoted and paid the most.
+
+What career path are you currently in? I can help you brainstorm how Python specifically applies to your field!
+------------------------------------------------------------
+
+[2026-08-03 12:39:05.429820]
+You: Explain Python to a first-year Computer Science student.
+Assistant: Welcome to your first year of Computer Science! As your career coach, I am thrilled you’re here. This is the launchpad for your entire career in tech. 
+
+Right now, you are probably hearing a lot of buzzwords. One name that will come up constantly—in your classes, at hackathons, and in job descriptions—is **Python**.
+
+Let’s demystify what Python is, why it is so dominant in the tech industry, and how you should approach it as a first-year CS student to set yourself up for future internships and jobs.
+
+---
+
+### 1. What is Python? (The Analogy)
+
+Think of programming languages like vehicles. 
+*   **C or C++** is like a manual-transmission Formula 1 race car. It is incredibly fast and gives you total control over the engine (memory management), but if you don't know what you’re doing, you will stall out and crash.
+*   **Python** is like a Tesla. It is sleek, automatic, fast, and packed with autopilot features. It hides the complexity of the engine under the hood so you can focus on **where you want to go** (solving the problem) rather than **how the gears work**.
+
+Technically speaking, Python is a **high-level, interpreted, general-purpose programming language**. 
+*   **High-level** means its syntax looks very close to English. 
+*   **Interpreted** means it runs code line-by-line, which makes debugging quick.
+*   **General-purpose** means you can use it to build almost anything—from websites to AI models.
+
+### 2. The Python Contrast: Readability
+
+To understand why developers love Python, look at how you print "Hello, World!" in Java versus Python:
+
+**In Java:**
+```java
+public class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}
+```
+
+**In Python:**
+```python
+print("Hello, World!")
+```
+
+As a CS freshman, you want to learn **computational thinking**—how to break a big problem into small, logical steps. Python is the perfect tool for this because you don't have to fight the syntax (semicolons, curly braces, class declarations) just to get your logic to run.
+
+---
+
+### 3. Why Python is a Career Superpower
+
+If you look at industry trends, Python is consistently in the top 3 most demanded languages. Here is where it dominates:
+
+*   **Artificial Intelligence & Machine Learning:** Python is the undisputed king of AI. If you want to work with ChatGPT-like models, computer vision, or neural networks, you will use Python libraries like TensorFlow, PyTorch, and NumPy.
+*   **Data Science & Big Data:** Companies have massive amounts of data. Python (specifically libraries like Pandas and Matplotlib) is the standard for analyzing and visualizing that data to make business decisions.
+*   **Web Development (Backend):** Companies like Instagram, Spotify, and Pinterest use Python frameworks like **Django** and **Flask** to power their backends.
+*   **Automation/DevOps:** If you have a boring task (like renaming 1,000 files or scraping data from a website), you can write a Python script to do it in 10 minutes.
+
+---
+
+### 4. The Career Coach’s Warning: The "Python Trap"
+
+Because Python is so friendly, many students fall into a trap. They learn *only* Python and think they are ready for the industry. 
+
+As a CS student, you need to understand **how computers actually work**. Python hides things like memory allocation, pointers, and data types. 
+*   **My Advice:** Learn Python to build things quickly and understand logic. But **do not avoid** your C, C++, or Java classes. Knowing a low-level language makes you a *better* Python programmer because you will understand what Python is doing under the hood.
+
+---
+
+### 5. Your Action Plan for Freshman Year
+
+As your coach, here is your homework to get ahead of 90% of your peers:
+
+1.  **Learn the Basics Deeply:** Don't just watch tutorials. Build small things. Write a program that plays Rock-Paper-Scissors, or a script that text-alerts you when your favorite sneaker goes on sale.
+2.  **Master "Data Structures and Algorithms" in Python:** When you interview for internships next year, your technical interviews will likely involve solving coding puzzles. Python is the best language for these interviews because you can write solutions in fewer lines of code.
+3.  **Explore the Ecosystem:** Once you know basic Python, pick a path:
+    *   Interested in AI? Download **Jupyter Notebook** and look at a **Kaggle** dataset.
+    *   Interested in Web Dev? Build a simple web app using **Flask**.
+
+### Summary
+
+Python is not just a programming language; it is a gateway to modern technology. It allows you to turn your ideas into working software faster than almost any other language. 
+
+Master it, but remain curious about how the underlying computer systems work. You’ve got a bright four years ahead of you—now go write some code!
+------------------------------------------------------------
+
+[2026-08-03 12:39:23.961222]
+You: You are a senior software engineer.
+Assistant: Hello! As your AI Career Coach, I am thrilled to work with you. 
+
+Being a **Senior Software Engineer** is one of the most exciting, yet pivotal, stages in a tech career. You’ve mastered the syntax, you know how to build and ship reliable systems, and you’ve likely survived your fair share of production outages. 
+
+At this stage, your career is no longer just about writing code; it’s about **leverage, influence, and strategic decision-making.** You are likely standing at a crossroads, looking at several potential paths forward.
+
+To help us get the most out of our coaching session, **where would you like to focus today?** Here are some of the common areas I help Senior Engineers navigate:
+
+1. **The Fork in the Road (IC vs. Management):** Deciding whether to pursue the Individual Contributor path (Staff/Principal Engineer) or transition into Engineering Management (EM).
+2. **Reaching Staff Level:** Developing "soft" skills like influencing without authority, system design at scale, mentoring, and aligning technical roadmaps with business goals.
+3. **Job Search & Interview Prep:** Optimizing your resume for high-leverage roles, mastering system design interviews, or navigating behavioral questions (like the STAR method) for leadership roles.
+4. **Combating Burnout or Boredom:** Finding a new spark, transitioning to a new domain (like AI/ML or Web3), or finding a better work-life balance.
+5. **Navigating Workplace Dynamics:** Dealing with difficult stakeholders, advocating for a promotion, or learning how to communicate the business value of technical debt to non-technical executives.
+
+Tell me a bit about your current situation, what's top of mind for you, or what your ultimate career goal is, and we can map out a strategy to get you there!
+------------------------------------------------------------
+
+[2026-08-03 12:40:02.830355]
+You: Explain Python using real-world examples and keep it under 150 words.
+Assistant: Think of Python as the "Swiss Army knife" of technology—highly versatile and designed to read like plain English. 
+
+In the professional world, Python is the engine behind everyday solutions:
+* **Automation:** It acts like a digital assistant, instantly organizing thousands of Excel rows or auto-sending weekly client reports.
+* **Data Analytics:** It powers Spotify’s algorithm to recommend your next favorite song based on your listening habits.
+* **Web Tools:** It’s the robust backbone behind global platforms like Instagram.
+
+As a career coach, I call Python the ultimate "career accelerator." Learning it isn't just for software engineers; it’s for any professional who wants to automate repetitive tasks, make data-driven decisions, and command a higher salary. It’s the most high-value, beginner-friendly skill you can add to your resume today.
+------------------------------------------------------------
+
+[2026-08-03 12:40:19.642050]
+You: Write a resume.
+Assistant: Hello! I am your **AI Career Coach**. I’m excited to help you build a resume that doesn't just list your past duties, but actually **markets your value** to potential employers. 
+
+To stand out in today's job market, your resume must do two things:
+1. **Pass the ATS (Applicant Tracking System):** It needs a clean, text-based format with relevant keywords.
+2. **Hook the Recruiter in 6 Seconds:** It must highlight metrics, achievements, and your unique value proposition immediately.
+
+Below, I have provided a **Modern, ATS-Friendly Resume Template**. 
+
+Following the template, I’ve included **3 Golden Rules** to fill it out. If you want me to write a custom one for you, look at the prompt at the very end!
+
+---
+
+### [YOUR FULL NAME]
+[City, State/Country] | [Phone Number] | [Your Email Address] 
+[LinkedIn Profile URL] | [Link to Portfolio/GitHub (if applicable)]
+
+#### **PROFESSIONAL SUMMARY**
+*Coach's Tip: Write a 3–4 sentence "elevator pitch" that highlights your years of experience, core expertise, and a major achievement. Avoid generic buzzwords; focus on what you bring to the table.*
+
+Dynamic and results-driven **[Target Job Title]** with **[Number]** years of experience in **[Key Industry/Domain]**. Proven track record of **[mention 1 major achievement, e.g., increasing sales by 20%, or reducing software latency by 15%]**. Expert in **[Skill A]** and **[Skill B]**, with a passion for helping organizations **[mention a goal of your target employer, e.g., scale operations / drive user engagement]**.
+
+---
+
+#### **CORE COMPETENCIES**
+*Coach's Tip: Group your skills so they are easy to scan. Use keywords directly from the job descriptions you are targeting.*
+
+* **Technical Skills:** [Skill 1], [Skill 2], [Skill 3], [Tools/Software]
+* **Domain Expertise:** [Area 1], [Area 2], [Area 3]
+* **Soft Skills / Leadership:** [e.g., Cross-functional Collaboration, Agile Project Management]
+
+---
+
+#### **PROFESSIONAL EXPERIENCE**
+
+**[Current/Most Recent Employer Name]** – [City, State or "Remote"]  
+**[Your Job Title]** | [Start Month, Year] – Present  
+*Coach's Tip: Use the **Google X-Y-Z Formula**: "Accomplished [X], as measured by [Y], by doing [Z]."*
+* Led a team of **[Number]** to deliver **[Project Name]**, resulting in a **[Number]%** increase in **[Key Metric, e.g., efficiency, revenue, user retention]**.
+* Optimized **[Process Name]** by implementing **[Tool/Strategy]**, which reduced project turnaround time by **[Number]%**.
+* Collaborated with cross-functional teams (including Product, Sales, and Engineering) to design and launch **[Product/Initiative]**.
+* Resolved **[specific pain point]** by introducing **[your solution]**, saving the company **[$Amount or Hours]** annually.
+
+**[Previous Employer Name]** – [City, State or "Remote"]  
+**[Your Job Title]** | [Start Month, Year] – [End Month, Year]  
+* Designed and executed **[Project/Strategy]**, capturing **[Number]%** market share / improving customer satisfaction by **[Number]%**.
+* Managed a budget of **[$Amount]** and successfully delivered all deliverables **[X days/weeks]** ahead of schedule.
+* Analyzed **[type of data]** to identify trends, providing actionable insights that influenced executive decision-making.
+
+---
+
+#### **EDUCATION**
+
+**[Degree Name, e.g., Bachelor of Science in Computer Science]**  
+[University Name], [City, State] | Graduated: [Year]  
+* *Optional: Honors, GPA (if above 3.5 and recent graduate), or relevant coursework.*
+
+---
+
+#### **CERTIFICATIONS & PROJECTS**
+* **[Certification Name]** – [Issuing Organization] ([Year])
+* **[Key Project Name]** (Link): Built/Developed **[Description of project]** using **[Tools/Tech Stack]**, resulting in **[Impact/Result]**.
+
+---
+
+### 💡 Coach’s Golden Rules for Filling This Out:
+
+1. **Use Action Verbs:** Never start a bullet point with "Responsible for..." or "Duties included...". Instead, use strong action verbs like *Spearheaded, Engineered, Optimized, Negotiated, or Formulated*.
+2. **Quantify Everything:** Numbers are the universal language of business. Don't just say "Improved customer service." Say "Boosted customer satisfaction scores by **14%** over 6 months."
+3. **Keep it Clean:** Avoid tables, text boxes, graphics, and progress bars. ATS software cannot read them and will likely auto-reject your resume. Stick to clean, simple fonts (like Arial, Calibri, or Georgia).
+
+---
+
+### Want me to write a custom draft for you right now?
+To help me tailor this specifically to you, please reply with:
+1. **Your target job title** (e.g., Senior Product Manager, Entry-level Data Analyst, Customer Success Specialist).
+2. **Your years of experience** and industry.
+3. **2 or 3 of your proudest achievements** (even if they are rough, I will polish them!).
+4. *(Optional)* A link or copy-paste of a **job description** you are eyeing.
+------------------------------------------------------------
+
+[2026-08-03 12:40:45.453517]
+You: You are an experienced recruiter.
+Assistant: I can absolutely put on that hat! 
+
+As your AI Career Coach, one of my most valuable tools is my ability to step directly into the mindset of an **experienced recruiter**. 
+
+Having spent years "on the other side of the desk"—sourcing talent, screening resumes, managing applicant tracking systems (ATS), prepping hiring managers, and negotiating offers—I know exactly what makes a candidate stand out, and what makes a recruiter hit "delete."
+
+So, let's look at your career through the recruiter’s lens. What are we tackling today? 
+
+1. **The Resume/LinkedIn Review:** Do you want to know if your profile would catch my eye in a 6-second scan?
+2. **The ATS Mystery:** Want to understand how I search for keywords and how to make sure your resume actually gets seen by a human?
+3. **The Interview Prep:** Are you trying to figure out what I’m *really* looking for when I ask, "Tell me about yourself," or "What are your salary expectations?"
+4. **The Post-Interview Phase:** Do you need advice on how to follow up, handle a counter-offer, or decode why a recruiter might have gone quiet?
+
+Tell me what you're working on, and I'll give you the honest, inside perspective of a seasoned recruiter!
+------------------------------------------------------------
+
+[2026-08-03 12:40:58.269513]
+You: Write a resume for a junior AI engineer graduating in 2027 with Python, FastAPI, and Gemini API experience.
+Assistant: As an AI Career Coach, I’ve been tracking the evolution of the AI job market closely. By 2027, the industry has shifted: companies are no longer just looking for people who can write prompts. They want **AI Engineers**—software engineers who understand API orchestration, latency, vector databases, and how to build scalable backends around Large Language Models (LLMs).
+
+With your stack (**Python, FastAPI, and the Gemini API**), you are in a very strong position. Gemini’s multimodal capabilities (handling text, audio, video, and code natively) combined with FastAPI’s asynchronous speed make you highly competitive.
+
+Here is a tailored, high-impact resume template designed to pass ATS (Applicant Tracking Systems) and impress hiring managers in 2027.
+
+---
+
+# [FIRST NAME] [LAST NAME]
+[City, State/Country] | [Phone Number] | [Email Address] | [LinkedIn Link] | [GitHub Link] | [Portfolio/Website Link]
+
+## PROFESSIONAL SUMMARY
+Results-driven Junior AI Engineer graduating in May 2027 with a strong foundation in Computer Science and hands-on experience building production-ready AI applications. Specialized in developing high-performance, asynchronous backends using **Python** and **FastAPI**, and orchestrating advanced reasoning pipelines using the **Gemini API (Pro & Flash)**. Proven track record of designing RAG (Retrieval-Augmented Generation) systems and multimodal AI agents. Passionate about bridging the gap between cutting-edge foundational models and scalable, user-centric software.
+
+---
+
+## TECHNICAL SKILLS
+*   **Languages:** Python (Advanced), SQL, JavaScript, Bash
+*   **AI/LLM Technologies:** Gemini API (Multimodal, Flash, Pro), LangChain, LlamaIndex, Prompt Engineering, Function Calling/Tool Use
+*   **Backend & APIs:** FastAPI, RESTful APIs, gRPC, Pydantic, Uvicorn
+*   **Databases & Vector Search:** PostgreSQL, Pinecone, ChromaDB, Redis
+*   **DevOps & Cloud:** Docker, Google Cloud Platform (GCP), Git/GitHub, CI/CD (GitHub Actions)
+*   **Testing & Monitoring:** Pytest, LangSmith, Arize Phoenix (LLM evaluation)
+
+---
+
+## EDUCATION
+**Bachelor of Science in Computer Science**  
+*University Name* — [City, State]  
+*Expected Graduation: May 2027*  
+*   **GPA:** 3.8/4.0 (or mention honors if applicable)
+*   **Relevant Coursework:** Data Structures & Algorithms, Database Systems, Artificial Intelligence, Natural Language Processing, Distributed Systems.
+
+---
+
+## PROFESSIONAL EXPERIENCE
+
+**AI Software Engineer Intern** | *NextGen Tech Solutions* — [City, State]  
+*May 2026 – August 2026*  
+*   Co-developed a multimodal customer support intelligence platform using **Python** and **FastAPI**, reducing customer ticket resolution time by **35%**.
+*   Integrated the **Gemini 1.5 Pro API** to process and analyze user-uploaded screenshots and video screen-shares, automating the categorization of UI bugs with **92% accuracy**.
+*   Designed asynchronous FastAPI endpoints utilizing `async/await` to handle concurrent user requests, reducing API response latency by **40%**.
+*   Implemented a vector-based search using **ChromaDB** and Gemini embeddings, enabling semantic search across 50,000+ technical documentation pages.
+
+**Backend Developer Intern** | *SaaSify Startups* — [Remote]  
+*June 2025 – August 2025*  
+*   Built and maintained 15+ RESTful APIs using **FastAPI** and **PostgreSQL**, improving data retrieval speeds by **25%** through query optimization and Redis caching.
+*   Wrote automated unit and integration tests using **Pytest**, increasing test coverage from 65% to **90%**.
+*   Participated in daily agile standups and version control workflows utilizing Git and GitHub.
+
+---
+
+## TECHNICAL PROJECTS
+
+**OmniScribe: Multimodal AI Meeting Summarizer** | *Python, FastAPI, Gemini API, Pinecone*  
+*[GitHub Link / Live Demo Link]*
+*   Developed a web application that ingests video/audio meetings and generates structured action items and sentiment analysis using the **Gemini Flash** model.
+*   Built the backend architecture with **FastAPI**, leveraging background tasks to handle heavy video processing asynchronously without blocking the client.
+*   Utilized Gemini’s native multimodal capabilities to analyze speaker slides and whiteboard drawings alongside audio transcripts, creating highly contextual meeting summaries.
+*   Deployed the application containerized with **Docker** on Google Cloud Run.
+
+**DocuQuery: Agentic RAG Platform** | *Python, Gemini API, LangChain, FastAPI*  
+*[GitHub Link / Live Demo Link]*
+*   Engineered an intelligent document-assistant platform allowing users to chat with complex PDFs, spreadsheets, and images.
+*   Implemented **Gemini’s Function Calling** feature to allow the AI agent to dynamically decide when to query a local database vs. searching the web.
+*   Optimized retrieval accuracy by implementing a hybrid search (sparse + dense) and a reranking pipeline, improving answer relevance scores by **18%**.
+*   Created clean, auto-generated interactive API documentation using FastAPI’s built-in Swagger UI.
+
+---
+
+## LEADERSHIP & ACHIEVEMENTS
+*   **Winner, Google Cloud Student Hackathon (2026):** Built a prototype AI tutor using Gemini API in 36 hours, winning "Most Innovative Use of AI."
+*   **President, University AI Club (2025 - Present):** Organize weekly workshops on Python backend development and LLM integration, growing membership by 150%.
+
+---
+
+# 💡 Career Coach Notes (How to Use This Template)
+
+To make this resume truly stand out to hiring managers in 2027, keep these three strategic tips in mind:
+
+1.  **Emphasize "Async" in FastAPI:** Anyone can write basic Python. Knowing how to write *asynchronous* code (using `async/await`) is what separates a junior from a mid-level engineer. Make sure you can explain *why* FastAPI's async nature is crucial for AI applications (e.g., waiting for LLM API calls to return without blocking the server).
+2.  **Highlight "Multimodality":** Gemini’s biggest differentiator is its ability to natively process text, audio, video, and images together. Ensure your project descriptions highlight that you didn't just use Gemini for text, but you passed it video or audio data as well.
+3.  **Quantify Your Impact:** In 2027, AI is about efficiency and cost. Use metrics like "reduced latency by X%", "saved X% in API costs by using Gemini Flash instead of Pro for simple tasks," or "improved accuracy by X%."
+------------------------------------------------------------

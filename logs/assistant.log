@@ -130,3 +130,28 @@ google.genai.errors.ClientError: 404 NOT_FOUND. {'error': {'code': 404, 'message
 2026-08-02 14:57:55,960 | INFO | User asked: bye
 2026-08-02 14:57:59,283 | INFO | Response generated successfully.
 2026-08-02 14:57:59,286 | INFO | Application closed.
+2026-08-03 12:37:57,559 | INFO | Starting AI Career Assistant.
+2026-08-03 12:37:57,563 | INFO | Application started.
+2026-08-03 12:38:02,108 | INFO | User asked: /serach
+2026-08-03 12:38:06,697 | INFO | Response generated successfully.
+2026-08-03 12:38:12,182 | INFO | User asked: hi
+2026-08-03 12:38:15,698 | INFO | Response generated successfully.
+2026-08-03 12:38:19,251 | INFO | User asked: hello
+2026-08-03 12:38:22,726 | INFO | Response generated successfully.
+2026-08-03 12:38:27,211 | INFO | User asked: what is python?
+2026-08-03 12:38:35,133 | INFO | Response generated successfully.
+2026-08-03 12:38:40,131 | INFO | User asked: Explain Python.
+2026-08-03 12:38:48,734 | INFO | Response generated successfully.
+2026-08-03 12:38:55,029 | INFO | User asked: Explain Python to a first-year Computer Science student.
+2026-08-03 12:39:05,428 | INFO | Response generated successfully.
+2026-08-03 12:39:17,971 | INFO | User asked: You are a senior software engineer.
+2026-08-03 12:39:23,960 | INFO | Response generated successfully.
+2026-08-03 12:39:58,285 | INFO | User asked: Explain Python using real-world examples and keep it under 150 words.
+2026-08-03 12:40:02,829 | INFO | Response generated successfully.
+2026-08-03 12:40:08,432 | INFO | User asked: Write a resume.
+2026-08-03 12:40:19,640 | INFO | Response generated successfully.
+2026-08-03 12:40:40,275 | INFO | User asked: You are an experienced recruiter.
+2026-08-03 12:40:45,452 | INFO | Response generated successfully.
+2026-08-03 12:40:45,456 | INFO | User asked: Write a resume for a junior AI engineer graduating in 2027 with Python, FastAPI, and Gemini API experience.
+2026-08-03 12:40:58,268 | INFO | Response generated successfully.
+2026-08-03 13:20:07,714 | WARNING | Application interrupted by user.

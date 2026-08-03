@@ -5,6 +5,20 @@ import json
 from config import HISTORY_DIR, EXPORT_DIR
 
 
+def print_header(title: str, width: int = 50) -> None:
+    """
+    Print a formatted section header.
+
+    Args:
+        title: Title to display.
+        width: Width of the separator line.
+    """
+
+    print("\n" + "=" * width)
+    print(title)
+    print("=" * width)
+
+
 def welcome() -> None:
     """
     Display the application welcome screen.
@@ -12,9 +26,8 @@ def welcome() -> None:
 
     now = datetime.now()
 
-    print("=" * 50)
-    print("🤖 AI Career Assistant")
-    print("=" * 50)
+    print_header("🤖 AI Career Assistant")
+
     print("Welcome Memoona!")
     print(f"Today's Date    : {now.strftime('%d %B %Y')}")
     print(f"Session Started : {now.strftime('%I:%M %p')}")
@@ -79,12 +92,6 @@ def save_chat_json(history: list) -> None:
 def export_chat(history: list) -> Path:
     """
     Export the current conversation to a Markdown file.
-
-    Args:
-        history: Conversation history.
-
-    Returns:
-        Path of the exported Markdown file.
     """
 
     export_path = Path(EXPORT_DIR)
@@ -118,3 +125,30 @@ def export_chat(history: list) -> Path:
     filename.write_text("\n".join(lines), encoding="utf-8")
 
     return filename
+
+
+def search_history(history: list, keyword: str) -> list:
+    """
+    Search conversations using a case-insensitive keyword.
+
+    Args:
+        history: Conversation history.
+        keyword: Search keyword.
+
+    Returns:
+        Matching conversations.
+    """
+
+    keyword = keyword.strip().lower()
+
+    matches = []
+
+    for chat in history:
+
+        question = chat["question"].lower()
+        answer = chat["answer"].lower()
+
+        if keyword in question or keyword in answer:
+            matches.append(chat)
+
+    return matches
